@@ -20,8 +20,7 @@ Remove `packages/akia-react-eslint-config` and `packages/akia-react-tsconfig` pa
 akia-react/
 ├── eslint/                          # moved from packages/akia-react-eslint-config/
 │   ├── base.js
-│   ├── react.js
-│   └── astro.js
+│   └── react.js
 ├── tsconfig/                        # moved from packages/akia-react-tsconfig/
 │   ├── base.json
 │   ├── react-library.json
@@ -71,3 +70,4 @@ export default config;
 - Subpackages can customize their `eslint.config.js` and `tsconfig.json` independently (e.g., add custom rules, include/exclude patterns)
 - ESLint config dependencies (`@eslint/js`, `@typescript-eslint/*`, `eslint`, `typescript`) should be kept in each subpackage's `devDependencies` that uses them, not hoisted to root
 - The `tsconfig.base.json` currently at root extends `akia-react-tsconfig/react-library.json` — after this change, it becomes `tsconfig/base.json` and subpackages extend from there directly
+- `eslint/astro.js` is not created — the original `packages/akia-react-eslint-config/astro.js` just re-exported the react config with no additions and was not used by any package

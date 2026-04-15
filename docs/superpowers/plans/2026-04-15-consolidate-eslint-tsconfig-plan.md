@@ -15,11 +15,12 @@
 ### Files to CREATE at root:
 - `eslint/base.js` — moved from `packages/akia-react-eslint-config/base.js`
 - `eslint/react.js` — moved from `packages/akia-react-eslint-config/react.js`
-- `eslint/astro.js` — moved from `packages/akia-react-eslint-config/astro.js`
 - `tsconfig/base.json` — moved from `packages/akia-react-tsconfig/base.json`
 - `tsconfig/react-library.json` — moved from `packages/akia-react-tsconfig/react-library.json`
 - `tsconfig/react-app.json` — moved from `packages/akia-react-tsconfig/react-app.json`
 - `tsconfig/astro.json` — moved from `packages/akia-react-tsconfig/astro.json`
+
+Note: `eslint/astro.js` is not created — it currently just re-exports react config with no additions and is unused. `tsconfig/astro.json` is kept as it may be used by Astro projects.
 
 ### Files to MODIFY:
 - `packages/akia-react-ai-markdown/eslint.config.js` — change import from `akia-react-eslint-config/react.js` to `../../eslint/react.js`
@@ -98,17 +99,7 @@ export default [
 ];
 ```
 
-- [ ] **Step 4: Create `eslint/astro.js`**
-
-```js
-import reactConfig from './react.js';
-
-export default [
-  ...reactConfig
-];
-```
-
-- [ ] **Step 5: Commit**
+- [ ] **Step 4: Commit**
 
 ```bash
 git add eslint/
