@@ -1,4 +1,4 @@
 {
-  "extends": "akia-react-tsconfig/react-library.json",
+  "extends": "../../tsconfig/react-library.json",
   "include": ["src", "vite.config.ts"]
 }
