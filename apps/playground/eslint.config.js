@@ -1,4 +1,4 @@
-import baseConfig from 'akia-react-eslint-config/react.js';
+import baseConfig from '../../eslint/react.js';
 import tseslint from '@typescript-eslint/eslint-plugin';
 import tsparser from '@typescript-eslint/parser';
 import globals from 'globals';

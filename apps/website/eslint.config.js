@@ -1,4 +1,4 @@
-import baseConfig from 'akia-react-eslint-config/astro.js';
+import baseConfig from '../../eslint/react.js';
 
 export default [
   {
