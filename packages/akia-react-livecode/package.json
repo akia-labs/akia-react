@@ -1,5 +1,5 @@
 {
-  "name": "akia-react-livecode",
+  "name": "@akia/akia-react-livecode",
   "version": "0.0.0",
   "private": false,
   "type": "module",
