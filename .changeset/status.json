@@ -1,0 +1,43 @@
+{
+  "changesets": [
+    {
+      "releases": [
+        {
+          "name": "akia-react-livecode",
+          "type": "patch"
+        },
+        {
+          "name": "akia-react-ai-markdown",
+          "type": "patch"
+        }
+      ],
+      "summary": "Initialize publishable workspace packages.",
+      "id": "initial-packages"
+    }
+  ],
+  "releases": [
+    {
+      "name": "akia-react-livecode",
+      "type": "patch",
+      "oldVersion": "0.0.0",
+      "changesets": [
+        "initial-packages"
+      ],
+      "newVersion": "0.0.1"
+    },
+    {
+      "name": "akia-react-ai-markdown",
+      "type": "patch",
+      "oldVersion": "0.0.0",
+      "changesets": [
+        "initial-packages"
+      ],
+      "newVersion": "0.0.1"
+    },
+    {
+      "name": "@akia-react/website",
+      "type": "none",
+      "changesets": []
+    }
+  ]
+}
