@@ -3,8 +3,8 @@
 ## Context
 
 Two packages in `packages/` need their React peerDependencies expanded and TypeScript declaration files generated after build:
-- `@akia/akia-react-ai-markdown`
-- `@akia/akia-react-livecode`
+- `akia-react-ai-markdown`
+- `akia-react-livecode`
 
 Both packages currently pin React to `^19.1.0` and do not generate `.d.ts` files during build.
 

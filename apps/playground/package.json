@@ -1,5 +1,5 @@
 {
-  "name": "@akia/playground",
+  "name": "akia-playground",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,12 +7,12 @@
     "build": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet for @akia/playground\"",
+    "test": "echo \"No tests yet for akiaplayground\"",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@akia/akia-react-ai-markdown": "workspace:*",
-    "@akia/akia-react-livecode": "workspace:*",
+    "akia-react-ai-markdown": "workspace:*",
+    "akia-react-livecode": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

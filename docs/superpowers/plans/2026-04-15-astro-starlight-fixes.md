@@ -148,7 +148,7 @@ git commit -m "Update lockfile after adding @astrojs/check"
 
 - [ ] **Step 1: Run lint**
 
-Run: `pnpm --filter @akia/website lint`
+Run: `pnpm --filter akiawebsite lint`
 
 - [ ] **Step 2: Check it doesn't fail catastrophically**
 
@@ -161,7 +161,7 @@ Expected: No fatal errors, may have warnings but should run
 
 - [ ] **Step 1: Run typecheck**
 
-Run: `pnpm --filter @akia/website typecheck`
+Run: `pnpm --filter akiawebsite typecheck`
 
 - [ ] **Step 2: Check it succeeds**
 
@@ -174,7 +174,7 @@ Expected: Type checking passes
 
 - [ ] **Step 1: Run build**
 
-Run: `pnpm --filter @akia/website build`
+Run: `pnpm --filter akiawebsite build`
 
 - [ ] **Step 2: Check it succeeds**
 

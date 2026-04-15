@@ -10,7 +10,7 @@
 
 ---
 
-## Task 1: Update @akia/akia-react-ai-markdown
+## Task 1: Update akia-react-ai-markdown
 
 **Files:**
 - Modify: `packages/akia-react-ai-markdown/package.json`
@@ -66,7 +66,7 @@ git commit -m "feat: expand React peerDeps to ^17||^18||^19 and add dts plugin"
 
 ---
 
-## Task 2: Update @akia/akia-react-livecode
+## Task 2: Update akia-react-livecode
 
 **Files:**
 - Modify: `packages/akia-react-livecode/package.json`

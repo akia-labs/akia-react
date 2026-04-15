@@ -426,7 +426,7 @@ git commit -m "chore: add changesets release workflow"
 
 ```json
 {
-  "name": "@akia/website",
+  "name": "akia-website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -434,14 +434,14 @@ git commit -m "chore: add changesets release workflow"
     "build": "astro build",
     "lint": "eslint .",
     "typecheck": "astro check",
-    "test": "echo \"No tests yet for @akia/website\"",
+    "test": "echo \"No tests yet for akiawebsite\"",
     "clean": "rm -rf .astro dist"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.31.0",
     "@astrojs/react": "^4.3.0",
-    "@akia/akia-react-ai-markdown": "workspace:*",
-    "@akia/akia-react-livecode": "workspace:*",
+    "akia-react-ai-markdown": "workspace:*",
+    "akia-react-livecode": "workspace:*",
     "astro": "^5.7.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -550,7 +550,7 @@ This package will provide React-friendly markdown rendering helpers.
 Run: `pnpm install`
 Expected: Astro and Starlight dependencies install successfully.
 
-Run: `pnpm --filter @akia/website build`
+Run: `pnpm --filter akiawebsite build`
 Expected: Astro builds the docs site without configuration errors.
 
 - [ ] **Step 6: Commit**
@@ -575,7 +575,7 @@ git commit -m "feat: scaffold starlight docs app"
 
 ```json
 {
-  "name": "@akia/playground",
+  "name": "akia-playground",
   "private": true,
   "type": "module",
   "scripts": {
@@ -583,12 +583,12 @@ git commit -m "feat: scaffold starlight docs app"
     "build": "vite build",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet for @akia/playground\"",
+    "test": "echo \"No tests yet for akiaplayground\"",
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@akia/akia-react-ai-markdown": "workspace:*",
-    "@akia/akia-react-livecode": "workspace:*",
+    "akia-react-ai-markdown": "workspace:*",
+    "akia-react-livecode": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -681,7 +681,7 @@ body {
 Run: `pnpm install`
 Expected: Vite and React app dependencies install successfully.
 
-Run: `pnpm --filter @akia/playground build`
+Run: `pnpm --filter akiaplayground build`
 Expected: Vite outputs a production build without TypeScript errors.
 
 - [ ] **Step 5: Commit**
@@ -709,7 +709,7 @@ git commit -m "feat: scaffold vite playground app"
 
 ```json
 {
-  "name": "@akia/akia-react-livecode",
+  "name": "akia-react-livecode",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -727,7 +727,7 @@ git commit -m "feat: scaffold vite playground app"
     "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet for @akia/akia-react-livecode\"",
+    "test": "echo \"No tests yet for akia-react-livecode\"",
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
@@ -799,7 +799,7 @@ export function LiveCodeDemo({
 
 ```json
 {
-  "name": "@akia/akia-react-ai-markdown",
+  "name": "akia-react-ai-markdown",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -817,7 +817,7 @@ export function LiveCodeDemo({
     "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet for @akia/akia-react-ai-markdown\"",
+    "test": "echo \"No tests yet for akia-react-ai-markdown\"",
     "clean": "rm -rf dist"
   },
   "peerDependencies": {
@@ -879,10 +879,10 @@ export function AiMarkdown({ content }: AiMarkdownProps) {
 Run: `pnpm install`
 Expected: workspace dependencies resolve without missing package warnings.
 
-Run: `pnpm --filter @akia/akia-react-livecode build`
+Run: `pnpm --filter akia-react-livecode build`
 Expected: package builds `dist/index.js` successfully.
 
-Run: `pnpm --filter @akia/akia-react-ai-markdown build`
+Run: `pnpm --filter akia-react-ai-markdown build`
 Expected: package builds `dist/index.js` successfully.
 
 - [ ] **Step 4: Commit**
@@ -987,5 +987,5 @@ git commit -m "docs: document monorepo usage"
 ### Type consistency
 
 - Shared config package names remain `akia-react-tsconfig` and `akia-react-eslint-config` throughout.
-- Publishable package names remain `@akia/akia-react-livecode` and `@akia/akia-react-ai-markdown` throughout.
-- App package names remain `@akia/website` and `@akia/playground` throughout.
+- Publishable package names remain `akia-react-livecode` and `akia-react-ai-markdown` throughout.
+- App package names remain `akiawebsite` and `akiaplayground` throughout.

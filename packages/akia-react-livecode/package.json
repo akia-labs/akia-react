@@ -1,5 +1,5 @@
 {
-  "name": "@akia/akia-react-livecode",
+  "name": "akia-react-livecode",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -19,7 +19,7 @@
     "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"No tests yet for @akia/akia-react-livecode\"",
+    "test": "echo \"No tests yet for akia-react-livecode\"",
     "clean": "rm -rf dist"
   },
   "peerDependencies": {

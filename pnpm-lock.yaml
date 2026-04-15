@@ -47,10 +47,10 @@ importers:
 
   apps/playground:
     dependencies:
-      '@akia/akia-react-ai-markdown':
+      akia-react-ai-markdown:
         specifier: workspace:*
         version: link:../../packages/akia-react-ai-markdown
-      '@akia/akia-react-livecode':
+      akia-react-livecode:
         specifier: workspace:*
         version: link:../../packages/akia-react-livecode
       react:
@@ -84,18 +84,18 @@ importers:
 
   apps/website:
     dependencies:
-      '@akia/akia-react-ai-markdown':
-        specifier: workspace:*
-        version: link:../../packages/akia-react-ai-markdown
-      '@akia/akia-react-livecode':
-        specifier: workspace:*
-        version: link:../../packages/akia-react-livecode
       '@astrojs/react':
         specifier: ^4.3.0
         version: 4.4.2(@types/node@24.12.2)(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(yaml@2.8.3)
       '@astrojs/starlight':
         specifier: ^0.31.0
         version: 0.31.1(astro@5.18.1(@types/node@24.12.2)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3))
+      akia-react-ai-markdown:
+        specifier: workspace:*
+        version: link:../../packages/akia-react-ai-markdown
+      akia-react-livecode:
+        specifier: workspace:*
+        version: link:../../packages/akia-react-livecode
       astro:
         specifier: ^5.7.0
         version: 5.18.1(@types/node@24.12.2)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
@@ -156,10 +156,10 @@ importers:
   packages/akia-react-livecode:
     dependencies:
       react:
-        specifier: ^19.1.0
+        specifier: ^17 || ^18 || ^19
         version: 19.2.5
       react-dom:
-        specifier: ^19.1.0
+        specifier: ^17 || ^18 || ^19
         version: 19.2.5(react@19.2.5)
     devDependencies:
       '@types/react':

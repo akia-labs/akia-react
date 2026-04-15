@@ -348,15 +348,15 @@ pnpm install
 - [ ] **Step 2: Run typecheck on subpackages**
 
 ```bash
-pnpm --filter @akia/akia-react-ai-markdown typecheck
-pnpm --filter @akia/akia-react-livecode typecheck
+pnpm --filter akia-react-ai-markdown typecheck
+pnpm --filter akia-react-livecode typecheck
 ```
 
 - [ ] **Step 3: Run lint on subpackages**
 
 ```bash
-pnpm --filter @akia/akia-react-ai-markdown lint
-pnpm --filter @akia/akia-react-livecode lint
+pnpm --filter akia-react-ai-markdown lint
+pnpm --filter akia-react-livecode lint
 ```
 
 ---
