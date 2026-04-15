@@ -1,0 +1,26 @@
+{
+  "name": "@akia-react/website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "akia-react-ai-markdown": "workspace:*",
+    "akia-react-livecode": "workspace:*",
+    "@astrojs/mdx": "^3.0.0",
+    "@astrojs/react": "^4.0.0",
+    "astro": "^4.0.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.9.0"
+  }
+}

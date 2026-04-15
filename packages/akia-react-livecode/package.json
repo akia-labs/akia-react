@@ -1,0 +1,7 @@
+{
+  "name": "akia-react-livecode",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "files": ["src", "dist"]
+}
