@@ -1,0 +1,3 @@
+{
+  "extends": "akia-react-tsconfig/astro.json"
+}
