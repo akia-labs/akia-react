@@ -63,11 +63,13 @@ export default config;
 6. Remove `packages/akia-react-eslint-config/` directory
 7. Remove `packages/akia-react-tsconfig/` directory
 8. Remove `tsconfig.base.json` from root (replaced by `tsconfig/base.json`)
-9. Update root `package.json` to remove any devDependencies that were only used by the removed packages
+9. Update root `package.json` to add ESLint/TypeScript devDependencies (required for root-level configs imported via relative paths)
 
 ## Notes
 
 - Subpackages can customize their `eslint.config.js` and `tsconfig.json` independently (e.g., add custom rules, include/exclude patterns)
-- ESLint config dependencies (`@eslint/js`, `@typescript-eslint/*`, `eslint`, `typescript`) should be kept in each subpackage's `devDependencies` that uses them, not hoisted to root
+- Root must keep ESLint/TypeScript dependencies (`@eslint/js`, `@typescript-eslint/*`, `eslint`, `typescript`, `globals`) because root-level configs are imported via relative paths and Node.js resolves their dependencies from the root
+- `apps/playground` and `apps/website` also updated to use root configs (they also referenced the deleted packages)
 - The `tsconfig.base.json` currently at root extends `akia-react-tsconfig/react-library.json` — after this change, it becomes `tsconfig/base.json` and subpackages extend from there directly
 - `eslint/astro.js` is not created — the original `packages/akia-react-eslint-config/astro.js` just re-exported the react config with no additions and was not used by any package
+- Root `package.json` has `"type": "module"` required for ESM eslint configs
