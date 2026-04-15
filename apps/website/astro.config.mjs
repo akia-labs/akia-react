@@ -3,13 +3,18 @@ import react from "@astrojs/react";
 import starlight from "@astrojs/starlight";
 
 export default defineConfig({
+  site: "https://akia-react.example.com",
   integrations: [
     react(),
     starlight({
       title: "akia-react",
-      social: {
-        github: "https://github.com/your-org/akia-react"
-      },
+      social: [
+        {
+          icon: "github",
+          label: "GitHub",
+          href: "https://github.com/your-org/akia-react"
+        }
+      ],
       sidebar: [
         {
           label: "Guide",
