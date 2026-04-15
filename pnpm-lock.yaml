@@ -11,15 +11,27 @@ importers:
       '@changesets/cli':
         specifier: ^2.29.0
         version: 2.30.0(@types/node@24.12.2)
+      '@eslint/js':
+        specifier: ^9.0.0
+        version: 9.39.4
       '@types/react':
         specifier: ^19.1.0
         version: 19.2.14
       '@types/react-dom':
         specifier: ^19.1.0
         version: 19.2.3(@types/react@19.2.14)
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.0.0
+        version: 8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
+      '@typescript-eslint/parser':
+        specifier: ^8.0.0
+        version: 8.58.2(eslint@9.39.4)(typescript@5.9.3)
       eslint:
         specifier: ^9.25.0
         version: 9.39.4
+      globals:
+        specifier: ^17.5.0
+        version: 17.5.0
       react:
         specifier: ^19.1.0
         version: 19.2.5
@@ -30,7 +42,7 @@ importers:
         specifier: 2.9.6
         version: 2.9.6
       typescript:
-        specifier: 5.9.3
+        specifier: ^5.8.0
         version: 5.9.3
 
   apps/playground:
@@ -60,12 +72,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.58.2
         version: 8.58.2(eslint@9.39.4)(typescript@5.9.3)
-      akia-react-eslint-config:
-        specifier: workspace:*
-        version: link:../../packages/akia-react-eslint-config
-      akia-react-tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/akia-react-tsconfig
       eslint:
         specifier: ^9.25.0
         version: 9.39.4
@@ -109,12 +115,6 @@ importers:
       '@eslint/js':
         specifier: ^9.0.0
         version: 9.39.4
-      akia-react-eslint-config:
-        specifier: workspace:*
-        version: link:../../packages/akia-react-eslint-config
-      akia-react-tsconfig:
-        specifier: workspace:*
-        version: link:../../packages/akia-react-tsconfig
       eslint:
         specifier: ^9.25.0
         version: 9.39.4
@@ -140,12 +140,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.58.2(eslint@9.39.4)(typescript@5.9.3)
-      akia-react-eslint-config:
-        specifier: workspace:*
-        version: link:../akia-react-eslint-config
-      akia-react-tsconfig:
-        specifier: workspace:*
-        version: link:../akia-react-tsconfig
       eslint:
         specifier: ^9.25.0
         version: 9.39.4
@@ -155,24 +149,6 @@ importers:
       vite:
         specifier: ^6.3.0
         version: 6.4.2(@types/node@24.12.2)(yaml@2.8.3)
-
-  packages/akia-react-eslint-config:
-    devDependencies:
-      '@eslint/js':
-        specifier: ^9.0.0
-        version: 9.39.4
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^8.0.0
-        version: 8.58.2(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
-      '@typescript-eslint/parser':
-        specifier: ^8.0.0
-        version: 8.58.2(eslint@9.39.4)(typescript@5.9.3)
-      eslint:
-        specifier: ^9.0.0
-        version: 9.39.4
-      typescript:
-        specifier: ^5.8.0
-        version: 5.9.3
 
   packages/akia-react-livecode:
     dependencies:
@@ -195,12 +171,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^8.0.0
         version: 8.58.2(eslint@9.39.4)(typescript@5.9.3)
-      akia-react-eslint-config:
-        specifier: workspace:*
-        version: link:../akia-react-eslint-config
-      akia-react-tsconfig:
-        specifier: workspace:*
-        version: link:../akia-react-tsconfig
       eslint:
         specifier: ^9.25.0
         version: 9.39.4
@@ -210,8 +180,6 @@ importers:
       vite:
         specifier: ^6.3.0
         version: 6.4.2(@types/node@24.12.2)(yaml@2.8.3)
-
-  packages/akia-react-tsconfig: {}
 
 packages:
 
