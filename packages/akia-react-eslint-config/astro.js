@@ -1,3 +1,5 @@
-module.exports = {
-  extends: ["./react.js"]
-};
+import reactConfig from './react.js';
+
+export default [
+  ...reactConfig
+];

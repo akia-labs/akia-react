@@ -1,8 +1,14 @@
-module.exports = {
-  root: false,
-  env: {
-    es2022: true,
-    node: true
-  },
-  extends: ["eslint:recommended"]
-};
+import js from '@eslint/js';
+
+export default [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: {
+        node: true
+      }
+    }
+  }
+];

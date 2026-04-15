@@ -8,13 +8,6 @@ export default defineConfig({
     react(),
     starlight({
       title: "akia-react",
-      social: [
-        {
-          icon: "github",
-          label: "GitHub",
-          href: "https://github.com/your-org/akia-react"
-        }
-      ],
       sidebar: [
         {
           label: "Guide",

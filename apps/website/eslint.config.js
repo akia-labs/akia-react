@@ -4,8 +4,5 @@ export default [
   {
     ignores: ['.astro/**', 'dist/**', 'node_modules/**'],
   },
-  {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.mjs'],
-    ...baseConfig,
-  },
+  ...baseConfig,
 ];
